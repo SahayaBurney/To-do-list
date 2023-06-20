@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#name{
+    margin-left: 7%;
+    color: white;
+    background-color: black;
+    font-family: Freestyle Script;
+    letter-spacing: 2px;
+    font-size: 50px;
+    width: 23%;
+    text-align: center;
+    padding: 1%;
+    border: 2px solid black;
+    border-radius: 50px;
+    animation: name linear infinite 1s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.contain{
+    display: flex;
+    gap:10p
+}
+.filling{
+    border: 2px solid blue;
+    width: 40%;
+    display: inline;
+    float: left;
+    height: 300px;
+    margin-left: 7%;
+}
+.filling input,.filling textarea,.filling button{
+    width: 75%;
+    padding: 2%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.display{
+    border: 2px solid red;
+    height: 300px;
+    margin-left: 5%;
+    width: 40%;
+    display: inline;
+    float: right;
+    overflow-y: auto;
+    animation: box infinite 2s linear;
+}
+.data{
+    background-color:rgb(248, 145, 145);
+    color: black;
+    border: 2px solid  rgb(255, 255, 213);
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+.data{
+    font-family: Freestyle Script;
+    letter-spacing: 2px;
+}
+.data h3 {
+    font-size: 30px;
+    margin-left: 7%;
+}
+.data p{
+    text-align: center;
+    font-size: 20px;
+}
+.display button{
+    padding: 2%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    font-family: Freestyle Script;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    font-size: bold;
+    border: 0px solid;
+}
+@keyframes box {
+    0%{
+        border: 2px solid red;
+    }
+    71%{
+        border: 2px solid white;
+    }
+    72%{
+        border: 2px solid red;
+    }
+    
+}
+::-webkit-scrollbar {
+    width: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s; 
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  
+  ::-webkit-scrollbar:hover {
+    opacity: 1; 
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: red; 
   }
-}
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: red; 
+  }
+  
+ 
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
